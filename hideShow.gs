@@ -5,11 +5,11 @@ function onOpen() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
 
   // creates the menu
-  var menu = [{name: "Skjul gamle uker", functionName: "hideRows"},
-    {name: "Vis alle", functionName: "showRows"}];
+  var menu = [{name: "Hide previous week(s)", functionName: "hideRows"},
+    {name: "Show all", functionName: "showRows"}];
 
   // add menu to bar
-  ss.addMenu("Vis/Skjul", menu);
+  ss.addMenu("Show/hide", menu);
 }
 
 // Function for hiding all colums of expired weeks
